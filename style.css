@@ -1,3 +1,70 @@
-h1{
-    color: aqua;
+/* shared-start */
+* {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
 }
+
+:root {
+    --font-size-large: 3.25rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 3.25rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+/* shared-end */
+/* navigation-start */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1.5rem auto;
+}
+
+.nav-title {
+    color: #3A3A3A;
+    font-size: var(--font-size-medium);
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+nav>ul li {
+    list-style: none;
+    margin-right: 1.5rem;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+nav>ul>li>img {
+    width: 80%;
+}
+
+/* navigation-end */
+/* banner-start */
+
+/* banner-end */
+
+
+/* media query - mobile devices */
+@media screen and (max-width:576px) {
+    nav {
+        flex-direction: column;
+    }
+    nav>ul>li{
+        margin: 0.8rem auto;
+        padding: 0 0.2rem;
+    }
+}
+
+/* media query - tablet devices */
+@media screen and (min-width: 577px) and (max-width: 960px) {}
